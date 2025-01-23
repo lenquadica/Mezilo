@@ -1,5 +1,8 @@
-run = "cowsay Configure me!"
-entrypoint = "README.md"
+run = "Python run.py"
+modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "Python run.py"]
